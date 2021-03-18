@@ -1,4 +1,8 @@
 terraform {
+   required_version = ">= 0.14"
+   backend "azurerm" {
+    key = "terraform.tfstate"
+  }
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
